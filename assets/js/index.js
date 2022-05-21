@@ -22,7 +22,6 @@ function getUserInfo() {
     // },
     success: (res) => {
       if (res.status !== 0) return layer.msg('数据请求失败');
-      layer.msg('数据请求成功');
       renderAvatar(res.data);
     },
     // 无论成功还是失败，最终都会调用complete回调函数
